@@ -107,9 +107,11 @@
     font-weight:800;font-size:.85rem;display:flex;align-items:center;gap:.45rem;
     box-shadow:0 10px 24px rgba(58,43,38,.14);
   }
-  .pb1{top:6%;left:-10%;color:var(--leaf);}
-  .pb2{bottom:8%;right:-12%;color:var(--berry);}
-  .pb3{bottom:42%;left:-16%;color:var(--sky);}
+  .pb1{top:4%;left:-12%;color:var(--leaf);}
+  .pb2{bottom:6%;right:-13%;color:var(--berry);}
+  .pb3{bottom:40%;left:-17%;color:var(--sky);}
+  .pb4{top:9%;right:-14%;color:var(--coral);}
+  .pb5{bottom:5%;left:2%;color:#b9821a;}
 
   /* ---------- generic section ---------- */
   section{position:relative;padding:5.5rem 0;}
@@ -153,9 +155,9 @@
   .act-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;position:relative;z-index:2;}
   .act-card{background:var(--cream);border-radius:1.6rem;overflow:hidden;border:2px solid rgba(0,0,0,.04);transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column;}
   .act-card:hover{transform:translateY(-7px);box-shadow:0 16px 32px rgba(58,43,38,.12);}
-  .act-icon{height:118px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
-  .act-icon::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.6) 2.2px,transparent 2.3px);background-size:17px 17px;opacity:.55;}
-  .act-icon .emoji{font-size:3rem;position:relative;z-index:1;filter:drop-shadow(0 4px 6px rgba(58,43,38,.16));}
+  .act-icon{height:128px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+  .act-icon::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.7) 2px,transparent 2.1px);background-size:20px 20px;opacity:.5;}
+  .act-icon .emoji{width:76px;height:76px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:2.4rem;position:relative;z-index:1;box-shadow:0 8px 18px rgba(58,43,38,.16);}
   .act-body{padding:1.2rem 1.3rem 1.4rem;flex:1;display:flex;flex-direction:column;}
   .act-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.6rem;}
   .tg{font-size:.66rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;padding:.22rem .6rem;border-radius:1rem;}
@@ -167,6 +169,8 @@
   .tg-cult{background:#EADBFB;color:#6b3fa0;}
   .act-card h4{font-family:'Fredoka';font-weight:600;font-size:1.12rem;margin-bottom:.35rem;}
   .act-card p{font-size:.86rem;color:var(--ink-soft);font-weight:600;line-height:1.5;}
+  .act-learn{margin-top:auto;padding-top:.85rem;border-top:1.5px dashed rgba(58,43,38,.14);font-size:.8rem;color:var(--ink);font-weight:600;line-height:1.45;}
+  .act-learn b{display:block;font-family:'Fredoka';font-weight:500;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);margin-bottom:.2rem;}
   .ph-sun{background:var(--sun-soft);} .ph-sky{background:var(--sky-soft);}
   .ph-leaf{background:var(--leaf-soft);} .ph-berry{background:var(--berry-soft);}
   .ph-coral{background:var(--coral-soft);} .ph-plum{background:#EADBFB;}
@@ -284,6 +288,8 @@
         <span class="photo-badge pb1">🌟 Creative</span>
         <span class="photo-badge pb2">💛 Caring</span>
         <span class="photo-badge pb3">✨ Hardworking</span>
+        <span class="photo-badge pb4">🎨 Playful</span>
+        <span class="photo-badge pb5">🌏 Trilingual</span>
       </div>
     </div>
   </div>
@@ -345,7 +351,8 @@
         <div class="act-body">
           <div class="act-tags"><span class="tg tg-lang">Language</span><span class="tg tg-se">Social</span></div>
           <h4>Community Helpers Roleplay Studio</h4>
-          <p>A dramatic-play studio with role cards, props and problem scenarios so children explore the social world, negotiate roles and build language together.</p>
+          <p>A dramatic-play studio set up with role cards, dress-ups, props and simple problem scenarios. Children step into community roles like a doctor, baker or firefighter, taking turns, solving little problems and telling stories together.</p>
+          <div class="act-learn"><b>Children build</b>Role-play language, negotiation, turn-taking and an understanding of the people and jobs in their community.</div>
         </div>
       </div>
 
@@ -354,7 +361,8 @@
         <div class="act-body">
           <div class="act-tags"><span class="tg tg-se">Social</span><span class="tg tg-lang">Language</span></div>
           <h4>Helping Hands</h4>
-          <p>Children traced their hands and shared the ways they help friends and family, building empathy, cooperation and a caring classroom culture.</p>
+          <p>Children trace and decorate their own hands, then talk and draw about the different ways they help their friends, family and classroom. Their ideas become a shared display that celebrates kindness.</p>
+          <div class="act-learn"><b>Children build</b>Empathy, cooperation and the language to describe caring for others.</div>
         </div>
       </div>
 
@@ -363,16 +371,18 @@
         <div class="act-body">
           <div class="act-tags"><span class="tg tg-cult">Culture</span><span class="tg tg-phys">Physical</span></div>
           <h4>Chinese Fan Craft</h4>
-          <p>A culture-rich experience honouring children's home backgrounds, with folding and decorating that strengthens fine-motor skills and storytelling.</p>
+          <p>A culture-rich making experience that honours children's home backgrounds. Children fold, thread and decorate their own paper fans, then share what their families' cultures mean to them.</p>
+          <div class="act-learn"><b>Children build</b>Fine-motor control, cultural pride and a sense of belonging.</div>
         </div>
       </div>
 
       <div class="act-card">
         <div class="act-icon ph-leaf"><span class="emoji">🐛</span></div>
         <div class="act-body">
-          <div class="act-tags"><span class="tg tg-phys">Maths</span></div>
+          <div class="act-tags"><span class="tg tg-sci">Maths</span></div>
           <h4>Bugs in the Jar</h4>
-          <p>A hands-on counting game built for the children's love of minibeasts, developing number sense and one-to-one correspondence through play.</p>
+          <p>Built around the children's love of minibeasts, this hands-on counting game has them popping the right number of bugs into each jar, matching numerals to quantities as they go.</p>
+          <div class="act-learn"><b>Children build</b>Counting, one-to-one correspondence and early number sense.</div>
         </div>
       </div>
 
@@ -381,7 +391,8 @@
         <div class="act-body">
           <div class="act-tags"><span class="tg tg-sci">Sensory</span><span class="tg tg-phys">Physical</span></div>
           <h4>Decorate the Eggs</h4>
-          <p>An open-ended sensory and creative experience exploring colour, pattern and texture while strengthening fine-motor control and self-expression.</p>
+          <p>An open-ended creative table where children explore colour, pattern and texture, decorating eggs however they imagine using a range of materials and tools.</p>
+          <div class="act-learn"><b>Children build</b>Colour and pattern awareness, fine-motor control and creative self-expression.</div>
         </div>
       </div>
 
@@ -390,7 +401,8 @@
         <div class="act-body">
           <div class="act-tags"><span class="tg tg-sci">Science</span><span class="tg tg-lang">Language</span></div>
           <h4>Flower Life Science</h4>
-          <p>Children investigated the parts of a flower and how living things grow, sparked by their interest in the garden, building science vocabulary.</p>
+          <p>Sparked by the children's interest in the garden, this investigation has them looking closely at the parts of a real flower and exploring how living things grow and change.</p>
+          <div class="act-learn"><b>Children build</b>Science vocabulary, close observation and an understanding of living things.</div>
         </div>
       </div>
 
@@ -399,7 +411,8 @@
         <div class="act-body">
           <div class="act-tags"><span class="tg tg-cult">Culture</span><span class="tg tg-lang">Language</span></div>
           <h4>Aboriginal Flag Exploration</h4>
-          <p>An experience introducing First Nations perspectives with care and respect, opening conversations about culture, symbols and Country.</p>
+          <p>A respectful introduction to First Nations perspectives. Children explore the colours and meaning of the Aboriginal flag and join gentle conversations about culture, symbols and Country.</p>
+          <div class="act-learn"><b>Children build</b>Respect for First Nations cultures and an early awareness of symbols and Country.</div>
         </div>
       </div>
 
@@ -408,16 +421,18 @@
         <div class="act-body">
           <div class="act-tags"><span class="tg tg-mus">Music</span><span class="tg tg-phys">Physical</span></div>
           <h4>Freeze Dance</h4>
-          <p>A joyful music-and-movement game that channels children's energy while building listening skills, self-regulation and gross-motor control.</p>
+          <p>A joyful music-and-movement game where children dance freely and freeze when the music stops, a favourite for releasing energy while practising listening and body control.</p>
+          <div class="act-learn"><b>Children build</b>Listening, self-regulation and gross-motor coordination.</div>
         </div>
       </div>
 
       <div class="act-card">
-        <div class="act-icon ph-coral"><span class="emoji">🐝</span></div>
+        <div class="act-icon ph-coral"><span class="emoji">🌋</span></div>
         <div class="act-body">
-          <div class="act-tags"><span class="tg tg-sci">Sensory</span><span class="tg tg-phys">Physical</span></div>
-          <h4>Playdough Bees</h4>
-          <p>A tactile making experience that followed the children's bug fascination, developing fine-motor strength, creativity and focus.</p>
+          <div class="act-tags"><span class="tg tg-sci">Science</span><span class="tg tg-se">Emotions</span></div>
+          <h4>Erupting Emotions Volcano</h4>
+          <p>Using a bicarb-and-vinegar volcano, children watch the fizzing eruption and connect it to big feelings: how emotions can build up, bubble over, and then settle again. A playful, hands-on way into talking about anger, excitement and calming down.</p>
+          <div class="act-learn"><b>Children build</b>Emotional literacy and self-regulation, alongside cause-and-effect science thinking.</div>
         </div>
       </div>
 
@@ -426,16 +441,18 @@
         <div class="act-body">
           <div class="act-tags"><span class="tg tg-phys">Physical</span><span class="tg tg-se">Social</span></div>
           <h4>Colour Baskets</h4>
-          <p>A sorting and turn-taking game building colour recognition, cooperation and gross-motor movement in an active, shared group.</p>
+          <p>An active sorting game where children move around to collect objects and drop them into matching colour baskets, taking turns and cheering each other on.</p>
+          <div class="act-learn"><b>Children build</b>Colour recognition, sorting, turn-taking and active movement.</div>
         </div>
       </div>
 
       <div class="act-card">
-        <div class="act-icon ph-plum"><span class="emoji">🏠</span></div>
+        <div class="act-icon ph-sky"><span class="emoji">🧼</span></div>
         <div class="act-body">
-          <div class="act-tags"><span class="tg tg-sci">Design</span><span class="tg tg-se">Wellbeing</span></div>
-          <h4>Reggio-Inspired Play Space</h4>
-          <p>A full indoor environment I designed with open-ended studios, a calm zone and a digital corner, all built to invite deeper, child-led learning.</p>
+          <div class="act-tags"><span class="tg tg-sci">Science</span><span class="tg tg-se">Health</span></div>
+          <h4>Why Soap Works</h4>
+          <p>Children scatter pepper across a dish of water to stand in for germs, then dip a soapy finger into the middle and watch the "germs" race away to the edges. A vivid, hands-on reason to wash with soap, not just water.</p>
+          <div class="act-learn"><b>Children build</b>An understanding of hygiene and hand-washing, plus science skills of observing and predicting.</div>
         </div>
       </div>
 
@@ -444,7 +461,8 @@
         <div class="act-body">
           <div class="act-tags"><span class="tg tg-lang">Language</span><span class="tg tg-se">Family</span></div>
           <h4>Community Helpers Story Kit</h4>
-          <p>An open-ended take-home resource with role cards, props and a recording sheet that extends play into the home and partners with families.</p>
+          <p>An open-ended take-home resource with role cards, props and a simple recording sheet, designed to carry the roleplay learning into the home and build a genuine partnership with families.</p>
+          <div class="act-learn"><b>Children build</b>Oral language and storytelling, with families included in the learning.</div>
         </div>
       </div>
 
